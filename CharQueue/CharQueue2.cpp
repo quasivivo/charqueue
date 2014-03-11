@@ -7,3 +7,24 @@
 //
 
 #include "CharQueue2.h"
+
+void CharQueue2::pushChar(const char input) {
+    tmpQueue = input + charQueue;
+
+    charQueue = tmpQueue;
+}
+
+char CharQueue2::popChar() {
+    if (sizeof(charQueue) >= 1) {
+        const unsigned long newLength = (sizeof(charQueue)-1);
+        std::array<char,newLength> newCharQueue;
+        for (int i=0; i<newLength; i++) {
+            newCharQueue[i] = charQueue[i];
+        }
+        return charQueue[sizeof(charQueue)];
+    }
+    return ' ';
+}
+
+CharQueue2::~CharQueue2() {
+}

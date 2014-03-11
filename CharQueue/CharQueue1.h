@@ -10,5 +10,17 @@
 #define __CharQueue__CharQueue1__
 
 #include <iostream>
+#include <deque>
+
+class CharQueue1
+{
+private:
+    std::deque<char> charQueue;
+    
+public:
+    CharQueue1();
+    void pushChar(const char input);
+    char popChar();
+};
 
 #endif /* defined(__CharQueue__CharQueue1__) */

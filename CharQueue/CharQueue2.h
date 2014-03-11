@@ -10,5 +10,19 @@
 #define __CharQueue__CharQueue2__
 
 #include <iostream>
+#include <array>
+
+class CharQueue2
+{
+private:
+    char* charQueue;
+    char* tmpQueue;
+    
+public:
+    CharQueue2();
+    ~CharQueue2();
+    void pushChar(const char input);
+    char popChar();
+};
 
 #endif /* defined(__CharQueue__CharQueue2__) */
