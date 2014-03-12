@@ -10,7 +10,6 @@
 #define __CharQueue__CharQueue2__
 
 #include <iostream>
-#include <array>
 
 class CharQueue2
 {
