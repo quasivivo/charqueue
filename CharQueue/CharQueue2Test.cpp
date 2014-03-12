@@ -1,12 +1,11 @@
 //
-//  CharQueueTest.cpp
+//  CharQueue2Test.cpp
 //  CharQueue
 //
-//  Created by Will Hannah on 3/11/14.
+//  Created by Will Hannah on 3/9/14.
 //  Copyright (c) 2014 Will Hannah. All rights reserved.
 //
 
-#include "CharQueue1.h"
 #include "CharQueue2.h"
 #include "TestHarness.h"
 
@@ -38,6 +37,8 @@ TEST(pushPop, CharQueue2)
     cq2.pushChar('5');
     cq2.pushChar('g');
     cq2.pushChar('~');
+    
+    //std::cout << cq2 << std::endl;
     
     std::string shouldBe;
     shouldBe.push_back(cq2.popChar());
@@ -75,7 +76,7 @@ TEST(pushPopEdge2, CharQueue2)
         cq2.popChar();
         cq2.pushChar('Z');
     }
-
+    
     std::string shouldBeZee;
     shouldBeZee.push_back(cq2.popChar());
     

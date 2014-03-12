@@ -13,6 +13,11 @@
 		6120245518CF817A004AD15F /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6120244A18CF817A004AD15F /* Test.cpp */; };
 		6120245618CF817A004AD15F /* TestRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6120244D18CF817A004AD15F /* TestRegistry.cpp */; };
 		6120245718CF817A004AD15F /* TestResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6120244F18CF817A004AD15F /* TestResult.cpp */; };
+		614AA81318D09E6000B6B2A5 /* CharQueue1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614AA80E18D09E6000B6B2A5 /* CharQueue1.cpp */; };
+		614AA81418D09E6000B6B2A5 /* CharQueue2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614AA81018D09E6000B6B2A5 /* CharQueue2.cpp */; };
+		614AA81518D09E6000B6B2A5 /* CharQueue1Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614AA81218D09E6000B6B2A5 /* CharQueue1Test.cpp */; };
+		614AA81818D0A1AA00B6B2A5 /* CharQueue2Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614AA81618D0A1AA00B6B2A5 /* CharQueue2Test.cpp */; };
+		614AA81B18D0A96900B6B2A5 /* CharQueueCombinedTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 614AA81918D0A96900B6B2A5 /* CharQueueCombinedTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +33,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6120243D18CF8089004AD15F /* CharQueue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = CharQueue; path = /Users/whannah/Desktop/CharQueue/build/Debug/CharQueue; sourceTree = "<absolute>"; };
 		6120244618CF817A004AD15F /* Failure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Failure.cpp; sourceTree = "<group>"; };
 		6120244718CF817A004AD15F /* Failure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Failure.h; sourceTree = "<group>"; };
 		6120244818CF817A004AD15F /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
@@ -40,6 +44,14 @@
 		6120244E18CF817A004AD15F /* TestRegistry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestRegistry.h; sourceTree = "<group>"; };
 		6120244F18CF817A004AD15F /* TestResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TestResult.cpp; sourceTree = "<group>"; };
 		6120245018CF817A004AD15F /* TestResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestResult.h; sourceTree = "<group>"; };
+		614AA80D18D09E2100B6B2A5 /* CharQueue */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CharQueue; sourceTree = BUILT_PRODUCTS_DIR; };
+		614AA80E18D09E6000B6B2A5 /* CharQueue1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharQueue1.cpp; sourceTree = "<group>"; };
+		614AA80F18D09E6000B6B2A5 /* CharQueue1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharQueue1.h; sourceTree = "<group>"; };
+		614AA81018D09E6000B6B2A5 /* CharQueue2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharQueue2.cpp; sourceTree = "<group>"; };
+		614AA81118D09E6000B6B2A5 /* CharQueue2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharQueue2.h; sourceTree = "<group>"; };
+		614AA81218D09E6000B6B2A5 /* CharQueue1Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharQueue1Test.cpp; sourceTree = "<group>"; };
+		614AA81618D0A1AA00B6B2A5 /* CharQueue2Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharQueue2Test.cpp; sourceTree = "<group>"; };
+		614AA81918D0A96900B6B2A5 /* CharQueueCombinedTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharQueueCombinedTest.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +69,20 @@
 			isa = PBXGroup;
 			children = (
 				6120241F18CE4D03004AD15F /* CharQueue */,
+				614AA80D18D09E2100B6B2A5 /* CharQueue */,
 			);
 			sourceTree = "<group>";
 		};
 		6120241F18CE4D03004AD15F /* CharQueue */ = {
 			isa = PBXGroup;
 			children = (
+				614AA80E18D09E6000B6B2A5 /* CharQueue1.cpp */,
+				614AA80F18D09E6000B6B2A5 /* CharQueue1.h */,
+				614AA81018D09E6000B6B2A5 /* CharQueue2.cpp */,
+				614AA81118D09E6000B6B2A5 /* CharQueue2.h */,
+				614AA81218D09E6000B6B2A5 /* CharQueue1Test.cpp */,
+				614AA81618D0A1AA00B6B2A5 /* CharQueue2Test.cpp */,
+				614AA81918D0A96900B6B2A5 /* CharQueueCombinedTest.cpp */,
 				6120244618CF817A004AD15F /* Failure.cpp */,
 				6120244718CF817A004AD15F /* Failure.h */,
 				6120244818CF817A004AD15F /* Main.cpp */,
@@ -95,7 +115,7 @@
 			);
 			name = CharQueue;
 			productName = CharQueue;
-			productReference = 6120243D18CF8089004AD15F /* CharQueue */;
+			productReference = 614AA80D18D09E2100B6B2A5 /* CharQueue */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -130,11 +150,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6120245718CF817A004AD15F /* TestResult.cpp in Sources */,
+				614AA81B18D0A96900B6B2A5 /* CharQueueCombinedTest.cpp in Sources */,
 				6120245418CF817A004AD15F /* StringStreamTest.cpp in Sources */,
 				6120245518CF817A004AD15F /* Test.cpp in Sources */,
 				6120245318CF817A004AD15F /* Main.cpp in Sources */,
+				614AA81418D09E6000B6B2A5 /* CharQueue2.cpp in Sources */,
 				6120245618CF817A004AD15F /* TestRegistry.cpp in Sources */,
+				614AA81818D0A1AA00B6B2A5 /* CharQueue2Test.cpp in Sources */,
 				6120245218CF817A004AD15F /* Failure.cpp in Sources */,
+				614AA81518D09E6000B6B2A5 /* CharQueue1Test.cpp in Sources */,
+				614AA81318D09E6000B6B2A5 /* CharQueue1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +277,7 @@
 				6120244518CF8089004AD15F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
