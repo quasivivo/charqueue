@@ -2,7 +2,7 @@
 //  CharQueue2.h
 //  CharQueue
 //
-//  Created by Will Hannah on 3/11/14.
+//  Created by Will Hannah on 3/9/14.
 //  Copyright (c) 2014 Will Hannah. All rights reserved.
 //
 
@@ -18,11 +18,11 @@ private:
     int filledCount;
     
 public:
+    friend std::ostream& operator<< (std::ostream& o, CharQueue2 const& cq2);
     CharQueue2(const long maxQueueSize);
     ~CharQueue2();
     void pushChar(const char input);
     char popChar();
-    void printQueue();
 };
 
 #endif /* defined(__CharQueue__CharQueue2__) */

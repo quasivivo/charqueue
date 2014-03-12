@@ -2,7 +2,7 @@
 //  CharQueue1.h
 //  CharQueue
 //
-//  Created by Will Hannah on 3/11/14.
+//  Created by Will Hannah on 3/9/14.
 //  Copyright (c) 2014 Will Hannah. All rights reserved.
 //
 
@@ -15,12 +15,14 @@
 class CharQueue1
 {
 private:
-    std::deque<char> charQueue;
+    std::deque<char> queue;
     
 public:
-    CharQueue1();
+    friend std::ostream& operator<< (std::ostream& o, CharQueue1 const& cq1);
+    CharQueue1(const long maxQueueSize);
     void pushChar(const char input);
     char popChar();
+    void printQueue();
 };
 
 #endif /* defined(__CharQueue__CharQueue1__) */
