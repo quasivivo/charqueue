@@ -20,11 +20,11 @@ TEST(megaPushPop, CharQueue1)
     // First item in was i=1, 1%25 = 1 + 65 = 66 = Ascii B
     // Next item in was i=2, Ascii C
     
-    std::string shouldBeA;
-    shouldBeA.push_back(cq1.popChar());
-    shouldBeA.push_back(cq1.popChar());
+    std::string shouldBeBeeCee;
+    shouldBeBeeCee.push_back(cq1.popChar());
+    shouldBeBeeCee.push_back(cq1.popChar());
     
-    CHECK_EQUAL("BC", shouldBeA);
+    CHECK_EQUAL("BC", shouldBeBeeCee);
 }
 
 TEST(pushPop, CharQueue1)
