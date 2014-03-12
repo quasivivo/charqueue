@@ -8,23 +8,46 @@
 
 #include "CharQueue2.h"
 
-void CharQueue2::pushChar(const char input) {
-    tmpQueue = input + charQueue;
+CharQueue2::CharQueue2(const long maxQueueSize) {
+    queue = new char[maxQueueSize];
+    filledCount = 0;
+    for (int i=0; i<maxQueueSize-1; i++) {
+        queue[i] = ' ';
+    }
+    queue[maxQueueSize-1] = '\0';
+}
 
-    charQueue = tmpQueue;
+void CharQueue2::pushChar(const char input) {
+    if (!filledCount) {
+        queue[0] = input;
+        filledCount++;
+    } else if (filledCount != strlen(queue)) {
+        for (int i=filledCount+1; i>=1; i--) {
+            queue[i] = queue[i-1];
+        }
+        queue[0] = input;
+        filledCount++;
+    }
 }
 
 char CharQueue2::popChar() {
-    if (sizeof(charQueue) >= 1) {
-        const unsigned long newLength = (sizeof(charQueue)-1);
-        std::array<char,newLength> newCharQueue;
-        for (int i=0; i<newLength; i++) {
-            newCharQueue[i] = charQueue[i];
-        }
-        return charQueue[sizeof(charQueue)];
+    char returnChar = ' ';
+    
+    if (filledCount) {
+        returnChar = queue[filledCount-1];
+        filledCount--;
     }
-    return ' ';
+    
+    return returnChar;
+}
+
+void CharQueue2::printQueue() {
+    std::cout << filledCount << " items in the array." << std::endl;
+    for (int i=0; i<filledCount; i++) {
+        std::cout << i << ": " << queue[i] << std::endl;
+    }
 }
 
 CharQueue2::~CharQueue2() {
+    delete [] queue;
 }

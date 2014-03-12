@@ -15,14 +15,15 @@
 class CharQueue2
 {
 private:
-    char* charQueue;
-    char* tmpQueue;
+    char *queue;
+    int filledCount;
     
 public:
-    CharQueue2();
+    CharQueue2(const long maxQueueSize);
     ~CharQueue2();
     void pushChar(const char input);
     char popChar();
+    void printQueue();
 };
 
 #endif /* defined(__CharQueue__CharQueue2__) */
